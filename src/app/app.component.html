@@ -1,0 +1,22 @@
+<div class="container">
+
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control (GameStarted)="GameStarted($event)"></app-game-control>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <app-odd *ngFor="let cnt of CntArray" [cnt]="cnt.Count">
+
+    </app-odd>
+    <app-even *ngFor="let cnt of CntArray" [cnt]="cnt.Count">
+
+    </app-even>
+
+
+  </div>
+</div>
+
